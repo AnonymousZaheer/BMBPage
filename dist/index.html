@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="customCSS.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-next,
+.swiper-button-prev
+{
+  --swiper-navigation-size:15px;
+}
+</style>
+<body class="bg-white">
+    <!-- First Section -->
+    <div class="flex justify-center bg-green-100 xl:pt-10 xl:pb-10 p-3">
+        <div class="xl:w-8/12 flex lg:flex-row flex-col gap-y-4  items-center">
+            <div class="">
+                <h3 class="uppercase font-medium text-base">Best Medical Billing Company</h3>
+                <h2 class="mt-3 xl:text-4xl text-xl font-bold">Connecting Healthcare Providers to the payments they've earned!</h2>
+                <p class="mt-3 lg:w-8/12">The reimbursements come quick, the claims get accepted in an instant, and the denials become dollars again – only after the Best Medical Billing company takes charge!</p>
+                <button class="mt-9 bg-green-700 hover:bg-blue-900 text-white rounded-md pt-2 pl-5 pr-5 pb-2">Schedule Free Consultation</button>
+            </div>
+            <div>
+                <img src="https://bestmedicalbilling.com/wp-content/uploads/2024/01/Home-S1-P1-1024x835.webp" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <div class="flex justify-center bg-green-100 xl:pt-10 xl:pb-10 p-3">
+        <div class="xl:w-8/12 w-full flex xl:flex-row flex-wrap items-center bg-white p-1 rounded border-blue-500 border justify-center">
+            <div class="xl:w-1/5 w-1/2 p-3 border-r-2 border-slate-400 flex flex-col items-center">
+                <h2 class="text-3xl font-bold"><span class="counter">1.5</span> k+</h2>
+                <h3 class="text-sm text-center">USA providers served</h3>
+            </div>
+            <div class="xl:w-1/5 w-1/2 p-3 xl:border-r-2 border-slate-400 flex flex-col items-center">
+                <h2 class="text-3xl font-bold"><span class="counter ">1200</span> +</h2>
+                <h3 class="text-sm text-center">Medical billing experts</h3>
+            </div>
+            <div class="xl:w-1/5 w-1/2 p-3 border-r-2 border-slate-400 flex flex-col items-center">
+                <h2 class="text-3xl font-bold"><span class="counter">99.9</span> %</h2>
+                <h3 class="text-sm text-center">Claim acceptance rate</h3>
+            </div>
+            <div class="xl:w-1/5 w-1/2 p-3 xl:border-r-2 border-slate-400 flex flex-col items-center">
+                <h2 class="text-3xl font-bold">$<span class="counter">5.6</span> M+</h2>
+                <h3 class="text-sm text-center">Lost Revenue recovered</h3>
+            </div>
+            <div class="xl:w-1/5 w-1/2 p-3 xl:flex flex-col items-center hidden">
+                <h2 class="text-3xl font-bold">$<span class="counter">50</span></h2>
+                <h3 class="text-sm text-center">USA States</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Section -->
+    <div class="flex justify-center bg-green-900">
+        <div class="xl:w-8/12 w-full flex flex-col items-center xl:pt-10 xl:pb-10 p-3 justify-center">
+            <h2 class="xl:text-3xl text-xl font-semibold text-white">SCHEDULE A FREE APPOINTMENT</h2>
+            <form class="mt-7 w-full flex xl:flex-row flex-col gap-y-3 gap-x-4 justify-center" method="post" action="mailto:zaheerahmadsafeer2@gmail.com" enctype="text/plain">
+                <input class="xl:w-1/5 w-full pt-2 pb-2 pl-3 rounded mr-1" type="text" name="name" placeholder="Name">
+                <input class="xl:w-1/5 w-full pt-2 pb-2 pl-3 rounded mr-1" type="email" name="email" placeholder="Email">
+                <input class="xl:w-1/5 w-full pt-2 pb-2 pl-3 rounded mr-1" type="tel" name="phonenumber" placeholder="Phone Number">
+                <input class="xl:w-1/5 w-full pt-2 pb-2 pl-3 rounded mr-1" type="text" name="state" placeholder="State">
+                <button class="hover:bg-blue-900 bg-green-600 to-white p-2 pl-10 pr-10 rounded-md text-white font-semibold" type="submit" value="submit">Submit</button>
+                <!-- https://mailtrap.io/blog/html-form-send-email/ -->
+                <!-- To send form to the email you have to add backend scripting language -->
+            </form>
+            <p class="mt-7 text-white">Your information is 100% secured with us.</p>
+        </div>
+    </div>
+
+    <!-- Third Section -->
+    <div class="flex justify-center bg-white">
+        <div class="xl:w-8/12 w-full flex flex-col items-center xl:pt-10 xl:pb-0 p-3 justify-center">
+            <h2 class="xl:text-2xl text-xl font-semibold text-black">Our Best Medical Billing Services</h2>
+            <!-- Carousel -->
+            <div class="swiper mySwiper xl:mt-10 mt-3 w-full">
+                <div class="swiper-wrapper w-full">
+                    <div class="swiper-slide bg-green-100 p-5 rounded-lg flex flex-col justify-between">
+                            <h2 class="text-lg font-bold mb-2">Medical Coding</h2>
+                            <p>Ensure accurate diagnosis and procedure coding with our certified medical coding specialists.</p>
+                            <button class="text-sm bg-green-800 text-white pt-1 pb-1 pl-4 pr-4 rounded mt-2">Read More</button>
+                    </div>
+                    <div class="swiper-slide bg-green-100 p-5 rounded-lg flex flex-col justify-between">
+                            <h2 class="text-lg font-bold mb-2">Healthcare RCM</h2>
+                            <p>End-to-end revenue cycle solutions to optmize financial performance  for your practice.</p>
+                            <button class="text-sm bg-green-800 text-white pt-1 pb-1 pl-4 pr-4 rounded mt-2">Read More</button>
+                    </div>
+                    <div class="swiper-slide bg-green-100 p-5 rounded-lg flex flex-col justify-between">
+                            <h2 class="text-lg font-bold mb-2">Denial Management</h2>
+                            <p>Appeal and overturn denials with our denial management team flighting on your side.</p>
+                            <button class="text-sm bg-green-800 text-white pt-1 pb-1 pl-4 pr-4 rounded mt-2">Read More</button>
+                    </div>
+                    <div class="swiper-slide bg-green-100 p-5 rounded-lg flex flex-col justify-between">
+                            <h2 class="text-lg font-bold mb-2">Claim Scrubbing</h2>
+                            <p>Reduce rejected claims through our detailed claim scrubbing and correction services.</p>
+                            <button class="text-sm bg-green-800 text-white pt-1 pb-1 pl-4 pr-4 rounded mt-2">Read More</button>
+                    </div>
+                    <div class="swiper-slide bg-green-100 p-5 rounded-lg flex flex-col justify-between">
+                            <h2 class="text-lg font-bold mb-2">Billing Audit</h2>
+                            <p>Identify issues and maximize revenue with a comprehensive audit of your billing operations.</p>
+                            <button class="text-sm bg-green-800 text-white pt-1 pb-1 pl-4 pr-4 rounded mt-2">Read More</button>
+                    </div>                       
+                    <div class="swiper-slide bg-green-100 p-5 rounded-lg flex flex-col justify-between">
+                            <h2 class="text-lg font-bold mb-2">Clean Claim Rate</h2>
+                            <p>Identify issues and maximize revenue with a comprehensive audit of your billing operations.</p>
+                            <button class="text-sm bg-green-800 text-white pt-1 pb-1 pl-4 pr-4 rounded mt-2">Read More</button>
+                    </div>                       
+                    <div class="swiper-slide bg-green-100 p-5 rounded-lg flex flex-col justify-between">
+                            <h2 class="text-lg font-bold mb-2">Credentialing</h2>
+                            <p>Identify issues and maximize revenue with a comprehensive audit of your billing operations.</p>
+                            
+                            <button class="text-sm bg-green-800 text-white pt-1 pb-1 pl-4 pr-4 rounded mt-2">Read More</button>
+                    </div>                       
+                </div>
+            </div>
+            <div class="swiper-button-prev hidden xl:flex text-white bg-green-800 p-4 rounded-full relative left-[-500px] top-[-120px] 2xl:left-[-700px]"></div>
+            <div class="swiper-button-next hidden xl:flex text-white bg-green-800 p-4 rounded-full relative right-[-500px] top-[-140px] 2xl:right-[-700px]"></div>
+        </div>
+    </div>
+
+    <!-- Fourth Section -->
+    <div class="flex justify-center bg-white xl:mt-0">
+        <div class="xl:w-8/12 w-full flex xl:flex-row flex-col-reverse items-center justify-center xl:gap-x-20">
+            <div class="xl:w-1/2 w-full flex xl:justify-end justify-center">
+                <img width="80%" src="https://bestmedicalbilling.com/wp-content/uploads/2024/01/Home-S3-P1-1024x969.webp">
+            </div>
+            <div class="xl:w-1/2 w-full xl:p-0 p-3">
+                <h2 class="xl:text-2xl text-xl font-semibold text-black w-[90%]">Our Passion for billing shines with a 99.9% claim acceptance score!</h2>
+                <p class="mt-3">Best Medical Billing believes that doctors and nurses shouldn’t have to chase reimbursements. That’s why our medical billing service providers champion even the most complex medical coding claims to drive the most accurate healthcare insurance reimbursement rates for every physician that uses our end-to-end health revenue cycle management services.</p>
+                <button class="mt-9 bg-green-800 hover:bg-blue-900 text-white rounded-md pt-2 pl-5 pr-5 pb-2">Book Free Demo</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fifth Section -->
+    <div class="flex justify-center bg-green-800 mt-8 mb-8">
+        <div class="xl:w-8/12 w-full flex flex-col items-center pt-5 pb-5 justify-center gap-3">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper w-full">
+                    <div class="swiper-slide flex gap-2 items-center border-solid border-r-2 pr-5 pl-5">
+                        <img src="HP-S4-P4.svg" class="bg-white p-2 rounded-md">
+                        <div>
+                            <h2 class="text-white font-bold">Achieved highest clean claim rate for a lab facility.</h2>
+                            <p class="text-white text-sm">A few days ago.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex gap-2 items-center border-solid border-r-2 pr-5 pl-5">
+                        <img src="HP-S4-P4.svg" class="bg-white p-2 rounded-md">
+                        <div>
+                            <h2 class="text-white font-bold ">Achieved highest clean claim rate for a lab facility.</h2>
+                            <p class="text-white text-sm">A few days ago.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex gap-2 items-center border-solid border-r-2 pr-5 pl-5">
+                        <img src="HP-S4-P4.svg" class="bg-white p-2 rounded-md">
+                        <div>
+                            <h2 class="text-white font-bold ">Achieved highest clean claim rate for a lab facility.</h2>
+                            <p class="text-white text-sm">A few days ago.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex gap-2 items-center border-solid border-r-2 pr-5 pl-5">
+                        <img src="HP-S4-P4.svg" class="bg-white p-2 rounded-md">
+                        <div>
+                            <h2 class="text-white font-bold ">Achieved highest clean claim rate for a lab facility.</h2>
+                            <p class="text-white text-sm">A few days ago.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex gap-2 items-center border-solid border-r-2 pr-5 pl-5">
+                        <img src="HP-S4-P4.svg" class="bg-white p-2 rounded-md">
+                        <div>
+                            <h2 class="text-white font-bold ">Achieved highest clean claim rate for a lab facility.</h2>
+                            <p class="text-white text-sm">A few days ago.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex gap-2 items-center border-solid border-r-2 pr-5 pl-5">
+                        <img src="HP-S4-P4.svg" class="bg-white p-2 rounded-md">
+                        <div>
+                            <h2 class="text-white font-bold ">Achieved highest clean claim rate for a lab facility.</h2>
+                            <p class="text-white text-sm">A few days ago.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sixth Section -->
+    <div class="flex justify-center bg-white">
+        <div class="xl:w-8/12 w-full flex flex-col items-center justify-center gap-5 p-3">
+            <h2 class="xl:text-2xl text-xl font-semibold text-black text-center"> Why choose us as your medical billing outsourcing partner? </h2>
+            <p class="xl:w-3/4 w-full text-center">The difference between a claim paid and a claim denied is a matter of detail. As your healthcare revenue cycle management parteners, our medical billing organization spares no effort in scrubbing your claims, speeding up reimbursements, and managing your denials to net you the most revenue possible for patient check-ups and clinical precesses.</p>
+            <div class="flex xl:flex-row flex-col gap-3 justify-center">
+                <div class="bg-green-100 p-5 flex flex-row xl:w-[50%] w-full rounded-md gap-3">
+                    <img width="10%" src="HP-S4-P4.svg">
+                    <div width="80%">
+                        <h2 class="font-semibold text-xl">Electronic Billing</h2>
+                        <p>With a few clicks, claims are submitted to the payors. No more paper claims or postage to slow you down. Practices get paid faster and more accurately.</p>
+                    </div>
+                </div>
+                <div class="bg-blue-100 p-5 flex flex-row xl:w-[50%] w-full rounded-md gap-3">
+                    <img width="10%" src="HP-S4-P4.svg">
+                    <div width="80%">
+                        <h2 class="font-semibold text-xl">Claim Scrubbing</h2>
+                        <p>Claims are thoroughly checked for errors before submission. Clean claims lead to faster payment, fewer denials, and less follow up work.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="flex xl:flex-row flex-col gap-3 justify-center mt-[-08px]">
+                <div class="bg-blue-100 p-5 flex flex-row xl:w-[50%] w-full rounded-md gap-3">
+                    <img width="10%" src="HP-S4-P4.svg">
+                    <div width="80%">
+                        <h2 class="font-semibold text-xl">Denial Management</h2>
+                        <p>Denials are analyzed to find the root cause. Best Medical billing solutions are put in place to recover lost revenue and achieve 1st pass claim rate.</p>
+                    </div>
+                </div>
+                <div class="bg-green-100 p-5 flex flex-row xl:w-[50%] w-full rounded-md gap-3">
+                    <img width="10%" src="HP-S4-P4.svg">
+                    <div width="80%">
+                        <h2 class="font-semibold text-xl">Reporting & Analytics</h2>
+                        <p>Our robust reporting provides actionable insights into your revenue cycle health + identifies opportunities to maximize collections and stop revenue leakage.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="bg-green-800 text-white pt-1 pb-1 pr-3 pl-3 rounded-md">Book Free Demo</button>
+        </div>
+    </div>
+
+    <!-- Seventh Section -->
+    <div class="flex justify-center bg-white mb-8">
+        <div class="xl:w-7/12 w-full flex flex-col items-center xl:pt-10 xl:pb-10 p-3 justify-center gap-5">
+            <div class="bg-green-800 pt-1 rounded-lg flex xl:flex-row flex-col">
+                <div class="bg-green-100 p-0 pt-8 pb-8 flex xl:w-2/3 w-full xl:flex-row flex-col xl:rounded-lg rounded-t-lg">
+                    <div class="flex flex-col items-start xl:w-1/2 w-full xl:pr-3 gap-3">
+                        <h2 class="font-bold xl:text-2xl text-xl pl-5 pb-4">Billing Solutions for all billing problems</h2>
+                        <div class="xl:flex xl:flex-col block whitespace-nowrap overflow-auto w-[310px] xl:w-full  m-auto xl:items-start xl:pr-3 xl:gap-3">
+                            <button data-content="para1" class="styling_button font-medium pt-1 pb-1 xl:pl-5 p-3 xl:w-full xl:flex inline-block bg-white text-green-700">Lost Revenue</button>
+                            <button data-content="para2" class="styling_button font-medium pt-1 pb-1 xl:pl-5 p-3 xl:w-full xl:flex inline-block">Delayed Payments</button>
+                            <button data-content="para3" class="styling_button font-medium pt-1 pb-1 xl:pl-5 p-3 xl:w-full xl:flex inline-block">Claim Denials</button>
+                            <button data-content="para4" class="styling_button font-medium pt-1 pb-1 xl:pl-5 p-3 xl:w-full xl:flex inline-block">Unbundling</button>
+                            <button data-content="para5" class="styling_button font-medium pt-1 pb-1 xl:pl-5 p-3 xl:w-full xl:flex inline-block">Upcoding</button>
+                            <button data-content="para6" class="styling_button font-medium pt-1 pb-1 xl:pl-5 p-3 xl:w-full xl:flex inline-block">Modifier Usage</button>
+                            <button data-content="para7" class="styling_button font-medium pt-1 pb-1 xl:pl-5 p-3 xl:w-full xl:flex inline-block">Insurance Verification</button>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/2 w-full pt-0 xl:pt-11 pr-3" >
+                        <img class="hidden xl:block" src="HP-S4-P4.svg">
+                        <h2 class="mt-[34px] w-full bg-white pt-1 pb-1 pl-3 font-bold mb-5">Problem</h2>
+                        <p class="pl-3 para1 paragraph">Missing charges and unpaid claims add up resulting in lost revenue. With increasing administrative burdens, it's impossible for porviders to capture every billable charge and follow up on unpaid claims</p>
+                        <p class="pl-3 para2 paragraph hidden">The long delay between rendering services and receiving payment plays havoc with oyour cash flow. How can you keep the lights on and make payroll when reimburesement lags months behind your costs?</p>
+                        <p class="pl-3 para3 paragraph hidden">The constant struggle with denied claims is a total frustration for providers. Valuable time is wasted resubmitting claims only to face more denials. Revenue cycle suffers, and patients are left with unpaid bills.</p>
+                        <p class="pl-3 para4 paragraph hidden">The insurance company sharpshooters are watching, ready to accuse you of unbundling - splitting procedure codes to overbill. Even an honest mistake can lead to steep penalties and damaged reputation.</p>
+                        <p class="pl-3 para5 paragraph hidden">Incorrectly assigning higher-level codes to inflate reimbursement is fraudulent and can damage a provider’s reputation. However, providers sometimes miss billable charges or use incorrect codes due to complexity.</p>
+                        <p class="pl-3 para6 paragraph hidden">Just one wrong modifier carrying important billing information could trigger a denied claim, unnecessary audit, or underpayment. With all you have to focus on in caring for patients, who has time to comb through modifier minutiae?</p>
+                        <p class="pl-3 para7 paragraph hidden">Is the patient covered? By what plan? What’s the policy on this service? The endless uncertainties around insurance verification can stress you before you’ve even seen your first patient of the day.</p>
+                    </div>
+                </div>
+                <div class="bg-green-800 xl:w-1/3 w-full rounded-r-lg rounded-b-lg pt-0 pl-5 pr-5 xl:p-5 xl:pt-[70px] pb-8">
+                    <img class="hidden xl:block" src="HP-S4-P4.svg">
+                    <h2 class="xl:mt-[34px] mt-2 pt-1 pb-1 font-bold xl:mb-5 text-white">Solution</h2>
+                    <p class="text-white para1 paragraph">Our medical billing experts recover lost revenue by capturing all billable charges, reducing write-offs, and relentlessly pursusing payments on unpaid claims through startegic appeals and payer outreach.</p>
+                    <p class="text-white para2 paragraph hidden">We make it a top priority to follow up aggressively on delayed payments and get your claims paid as fast as possible. Count on a steady stream of reimbursement with our best billing protocols.</p>
+                    <p class="text-white para3 paragraph hidden">Our 99% claim acceptance rate means the denial ratio is almost negligible. But even if an insurance company rejects your good faith efforts with a terse denial, we appeal it until you are paid fairly for your vital work.</p>
+                    <p class="text-white para4 paragraph hidden">As your medical billing service provider, we ensure your claims are properly bundled and coded to avoid allegations of impropriety. You can sleep soundly knowing your billing is ethical and audit-proof.</p>
+                    <p class="text-white para5 paragraph hidden">Our best medical billers code accurately based on documentation, ensuring your claims are compliant and honest. You can hold your head high knowing your billing is appropriate and above board.</p>
+                    <p class="text-white para6 paragraph hidden">We use correct modifiers on claims per payer guidelines. Our billing team stays current on modifier policies through continuous education. We validate modifier usage through internal audits to prevent underpayment.</p>
+                    <p class="text-white para7 paragraph hidden">Our best meidcal billing company ensures you get preauthorization when needed and advises you on patient benefits and out of pocket costs. Just point us to the patient, and we'll handle the insurance details.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 8 -->
+    <div class="flex flex-col items-center justify-center bg-green-800 mt-8 mb-8">
+        <div class="xl:w-9/12 w-full flex xl:flex-row flex-col items-center xl:pt-10 p-3 justify-between xl:gap-10 gap-3">
+            <div class="flex xl:flex-row flex-col gap-5">
+                <p class="xl:w-2/5 w-full text-4xl xl:text-right text-center font-bold text-white">Best <br> Medical <br> Billing</p>
+                <p class="xl:w-3/5 w-full xl:text-8xl text-xl xl:text-left text-center font-bold text-white">DEMO</p>
+            </div>
+            <div class="xl:w-7/12 w-full flex items-center bg-white p-1 rounded-3xl border">
+                <div class="w-1/3 p-5 border-r-2 border-slate-400 flex flex-col items-center">
+                    <h2 class="xl:text-3xl text-xl font-bold"><span class="counter">1200</span> +</h2>
+                    <h3 class="text-sm">Billing Experts</h3>
+                </div>
+                <div class="w-1/3 p-5 border-r-2 border-slate-400 flex flex-col items-center">
+                    <h2 class="xl:text-3xl text-xl font-bold"><span class="counter">99.9</span> %</h2>
+                    <h3 class="text-sm">Claim A/R</h3>
+                </div>
+                <div class="w-1/3 p-5 flex flex-col items-center">
+                    <h2 class="xl:text-3xl text-xl font-bold"><span class="counter">50</span></h2>
+                    <h3 class="text-sm">USA States</h3>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-full justify-center items-center xl:pt-8 p-3 xl:pb-10">
+            <form action="" class="flex xl:flex-row w-full justify-center flex-col gap-3">
+                <input type="text" placeholder="Name" class="pt-2 pb-2 pl-3 pr-3 rounded-md">
+                <input type="email" placeholder="Email" name="" id="" class="pt-2 pb-2 pl-3 pr-3 rounded-md">
+                <input type="tel" placeholder="Phone Number" name="" id="" class="pt-2 pb-2 pl-3 pr-3 rounded-md">
+                <button type="button" class="bg-green-400 text-white rounded-md pt-2 pb-2 pr-4 pl-4">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Section 9 -->
+    <div class="flex flex-col items-center justify-center xl:mt-8 xl:mb-8">
+        <div class="xl:w-8/12 w-full flex flex-col xl:p-0 p-3 items-center justify-center">
+            <div><h2 class="text-2xl text-center font-semibold"><span class="text-green-600">Best Medical Billing</span> vs. <span class="text-blue-500">In-House Billing</span></h2></div>
+            <div class="w-full mt-10">
+                <!-- Table Head -->
+                <div class="flex w-full">
+                    <div class="w-1/3"></div>  <!--First Empty Div-->
+                    <div class="w-1/3 bg-green-200 pt-3 pb-3 xl:pl-14 xl:pr-14 rounded-t-2xl text-center xl:text-2xl text-xl font-semibold">With BMB</div>
+                    <div class="w-1/3 bg-blue-200 pt-3 pb-3 xl:pl-14 xl:pr-14 rounded-t-2xl text-center xl:text-2xl text-xl font-semibold">In-House Staff</div>
+                </div>
+                <!-- Table First Row -->
+                <div class="flex w-full">
+                    <div class="w-1/3 flex flex-col justify-center bg-pink-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-l text-center rounded-tl-xl text-sm xl:text-base">Expertise</div>
+                    <div class="w-1/3 flex flex-col justify-center items-center bg-green-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-r border-l text-sm xl:text-base">
+                        <img src="HP-S4-P4.svg" alt="">
+                        <p>Certified 1CD-10 Expertise</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col justify-center items-center bg-green-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-r text-center text-sm xl:text-base">
+                        <img src="HP-S4-P4.svg" alt="">
+                        <p>Lacks ICD-10 training</p>
+                    </div>
+                </div>
+                <!-- Table Second Row -->
+                <div class="flex w-full">
+                    <div class="w-1/3 flex flex-col justify-center bg-pink-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-l text-center text-sm xl:text-base">Accuracy</div>
+                    <div class="w-1/3 flex flex-col justify-center items-center bg-green-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-r border-l text-sm xl:text-base">
+                        <img src="HP-S4-P4.svg" alt="">
+                        <p>Regular audits ensure accuracy</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col justify-center items-center bg-green-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-r text-center text-sm xl:text-base">
+                        <img src="HP-S4-P4.svg" alt="">
+                        <p>Prone to errors</p>
+                    </div>
+                </div>
+                <!-- Table Third Row -->
+                <div class="flex w-full">
+                    <div class="w-1/3 flex flex-col justify-center bg-pink-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-l text-center text-sm xl:text-base">Credentialing</div>
+                    <div class="w-1/3 flex flex-col justify-center items-center bg-green-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-r border-l text-sm xl:text-base">
+                        <img src="HP-S4-P4.svg" alt="">
+                        <p>Stronger credentialing resources</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col justify-center items-center bg-green-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-r text-center text-sm xl:text-base">
+                        <img src="HP-S4-P4.svg" alt="">
+                        <p>Weaker credentialing support</p>
+                    </div>
+                </div>
+                <!-- Table Fourth Row -->
+                <div class="flex w-full">
+                    <div class="w-1/3 flex flex-col justify-center bg-pink-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-l text-center text-sm xl:text-base">Technology</div>
+                    <div class="w-1/3 flex flex-col justify-center items-center bg-green-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-r border-l text-sm xl:text-base">
+                        <img src="HP-S4-P4.svg" alt="">
+                        <p>Advanced Medical Billing Software</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col justify-center items-center bg-green-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-r text-center text-sm xl:text-base">
+                        <img src="HP-S4-P4.svg" alt="">
+                        <p>Outdated manual billing process</p>
+                    </div>
+                </div>
+                <!-- Table Fiveth Row -->
+                <div class="flex w-full">
+                    <div class="w-1/3 flex flex-col justify-center bg-pink-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-l text-center rounded-bl-xl border-b text-sm xl:text-base">Scalability</div>
+                    <div class="w-1/3 flex flex-col justify-center items-center bg-green-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-r border-l border-b text-sm xl:text-base">
+                        <img src="HP-S4-P4.svg" alt="">
+                        <p>Scalable Anytime</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col justify-center items-center bg-green-50 p-2 gap-y-2 border-solid border-blue-300 border-t border-r text-center rounded-br-xl border-b text-sm xl:text-base">
+                        <img src="HP-S4-P4.svg" alt="">
+                        <p>Has Capacity Limits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 10 -->
+    <div class="flex flex-col items-center justify-center mt-8 mb-8 bg-green-800 xl:pt-8 xl:pb-8 p-3">
+        <div class="xl:w-8/12 w-full flex flex-col gap-x-2">
+            <div class="flex xl:flex-row flex-col gap-x-5">
+                <div class="flex flex-col gap-y-5 xl:w-3/5 w-full">
+                    <h2 class="text-2xl font-semibold text-white">Best Medical Billing Wins</h2>
+                    <p class="text-white">Our Physician billing company has helped healthcare facilities across the USA to collect more in less time on auto-pilot.</p>
+                </div>
+                <div class="flex gap-x-8 self-start xl:w-2/5 w-full mt-5 xl:mt-0">
+                    <button class="text-white font-semibold slide-1 clicked-slide-button">Case Study 1</button>
+                    <button class="text-slate-400 font-semibold slide-2 clicked-slide-button">Case Study 2</button>
+                    <button class="text-slate-400 font-semibold slide-3 clicked-slide-button">Case Study 3</button>
+                </div>
+            </div>
+            <!-- Main Wrapper -->
+            <div class="swiper mySwiper3 mt-8">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">   <!--First Slide-->
+                        <div class="w-full bg-white pt-8 pb-8 pl-5 pr-5 rounded-xl flex xl:flex-row flex-col"> <!--flex row and flex col-->
+                                <div class="xl:w-3/5 w-full flex flex-col justify-center"> <!--width-->
+                                    <h2 class="text-2xl font-semibold mb-5">DME Provider</h2>
+                                    <p class="text-lg font-semibold text-slate-400">$250k monthly collections managed</p>
+                                    <p>An HHA collected $ 250k per month. After their in-house staff resigned, 60 authorizations a day overwhelmed them. BMB managed their accounts, tracked unpaid claims, and appealed denials - successfully unlocking cash flow.</p>
+                                    <div class="w-full flex items-center">
+                                        <div class="w-1/3 p-5 flex flex-col items-center">
+                                            <h2 class="text-2xl font-bold">$<span class="counter">250</span>k+</h2>
+                                            <h3 class="text-sm">Billing Experts</h3>
+                                        </div>
+                                        <div class="w-1/3 p-5 flex flex-col items-center">
+                                            <h2 class="text-2xl font-bold"><span class="counter">1800</span>+</h2>
+                                            <h3 class="text-sm">Claim A/R</h3>
+                                        </div>
+                                        <div class="w-1/3 p-5 flex flex-col items-center">
+                                            <h2 class="text-2xl font-bold"><span class="counter">6</span> mo.</h2>
+                                            <h3 class="text-sm">USA States</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full xl:w-1/2 flex justify-end">  <!--Width-->
+                                    <img width="80%" src="https://bestmedicalbilling.com/wp-content/uploads/2024/01/Home-S9-P1.webp" alt="">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="swiper-slide">   <!--Second Slide-->
+                        <div class="w-full bg-white pt-8 pb-8 pl-5 pr-5 rounded-xl flex xl:flex-row flex-col">
+                            <div class="xl:w-3/5 w-full flex flex-col justify-center">
+                                <h2 class="text-2xl font-semibold mb-5">Nursing Home</h2>
+                                <p class="text-lg font-semibold text-slate-400">$250k monthly collections managed</p>
+                                <p>An HHA collected $ 250k per month. After their in-house staff resigned, 60 authorizations a day overwhelmed them. BMB managed their accounts, tracked unpaid claims, and appealed denials - successfully unlocking cash flow.</p>
+                                <div class="w-full flex items-center">
+                                    <div class="w-1/3 p-5 flex flex-col items-center">
+                                        <h2 class="text-2xl font-bold">$<span class="counter">250</span>k+</h2>
+                                        <h3 class="text-sm">Billing Experts</h3>
+                                    </div>
+                                    <div class="w-1/3 p-5 flex flex-col items-center">
+                                        <h2 class="text-2xl font-bold"><span class="counter">1800</span>+</h2>
+                                        <h3 class="text-sm">Claim A/R</h3>
+                                    </div>
+                                    <div class="w-1/3 p-5 flex flex-col items-center">
+                                        <h2 class="text-2xl font-bold"><span class="counter">6</span> mo.</h2>
+                                        <h3 class="text-sm">USA States</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full xl:w-1/2 flex justify-end">
+                                <img width="80%" src="https://bestmedicalbilling.com/wp-content/uploads/2024/01/Home-S9-P2.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">   <!--Third Slide-->
+                        <div class="w-full bg-white pt-8 pb-8 pl-5 pr-5 rounded-xl flex xl:flex-row flex-col">
+                            <div class="xl:w-3/5 w-full flex flex-col justify-center">
+                                <h2 class="text-2xl font-semibold mb-5">Home Health Agency</h2>
+                                <p class="text-lg font-semibold text-slate-400">$250k monthly collections managed</p>
+                                <p>An HHA collected $ 250k per month. After their in-house staff resigned, 60 authorizations a day overwhelmed them. BMB managed their accounts, tracked unpaid claims, and appealed denials - successfully unlocking cash flow.</p>
+                                <div class="w-full flex items-center">
+                                    <div class="w-1/3 p-5 flex flex-col items-center">
+                                        <h2 class="text-2xl font-bold">$<span class="counter">250</span>k+</h2>
+                                        <h3 class="text-sm">Billing Experts</h3>
+                                    </div>
+                                    <div class="w-1/3 p-5 flex flex-col items-center">
+                                        <h2 class="text-2xl font-bold"><span class="counter">1800</span>+</h2>
+                                        <h3 class="text-sm">Claim A/R</h3>
+                                    </div>
+                                    <div class="w-1/3 p-5 flex flex-col items-center">
+                                        <h2 class="text-2xl font-bold"><span class="counter">6</span> mo.</h2>
+                                        <h3 class="text-sm">USA States</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full xl:w-1/2 flex justify-end">
+                                <img width="80%" src="https://bestmedicalbilling.com/wp-content/uploads/2024/01/Home-S9-P3.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 11 -->
+    <div class="flex flex-col items-center justify-center xl:mt-8 xl:mb-8 xl:pt-10 xl:pb-10 p-3 bg-white">
+        <div class="w-8/12 flex flex-row items-center justify-center gap-x-2">
+            <button data-contents="paras1" class="clicked-btn font-semibold text-[18px] p-4 cursor-pointer border-solid border border-green-700 rounded-md">Billing Software</button>
+            <button data-contents="paras2" class="clicked-btn font-semibold text-[18px] p-4 cursor-pointer border-solid border border-white rounded-md">EHR Software</button>
+            <button data-contents="paras3" class="clicked-btn font-semibold text-[18px] p-4 cursor-pointer border-solid border border-white rounded-md">Online Marketing</button>
+        </div>
+        <!-- First Button Content -->
+        <div class="paragraphs paras1 xl:w-8/12 w-full flex xl:flex-row flex-col-reverse items-center justify-center xl:gap-x-5 gap-y-3 xl:p-10 p-3 bg-green-100 rounded-xl mt-5">
+            <div class="xl:w-1/2 w-full"><img width="500px" src="https://bestmedicalbilling.com/wp-content/uploads/2024/01/Home-S10-P1.webp" alt=""></div>
+            <div class="xl:w-1/2 w-full flex flex-col gap-y-5">
+                <h2 class="font-semibold xl:text-3xl text-xl">Revolutionizing Revenue Cycle via Your <span class="text-green-600">Medical Billing Software</span></h2>
+                <p>What makes us the best medical billing company is that we can help healthcare providers to optimize their existing billing software as well. This allows for better visibility into patient finances, real-time analytics, record-keeping, aging buckets, and net collections. Plus, it also simplifies medical practice management.</p>
+                <button class="bg-green-800 text-white pt-2 pb-2 pr-6 pl-6 rounded-md self-start">Learn More</button>
+            </div>
+        </div>
+        <!-- Second Button Content -->
+        <div style="display:none;" class="paragraphs paras2 xl:w-8/12 w-full flex xl:flex-row flex-col-reverse items-center justify-center xl:gap-x-5 gap-y-3 xl:p-10 p-3 bg-green-100 rounded-xl mt-5">
+            <div class="xl:w-1/2 w-full"><img width="500px" src="https://bestmedicalbilling.com/wp-content/uploads/2024/01/Home-S10-P2.webp" alt=""></div>
+            <div class="xl:w-1/2 w-full flex flex-col gap-y-5">
+                <h2 class="font-semibold xl:text-3xl text-xl">Revolutionizing Revenue Cycle via Your <span class="text-green-600">Medical Billing Software</span></h2>
+                <p>What makes us the best medical billing company is that we can help healthcare providers to optimize their existing billing software as well. This allows for better visibility into patient finances, real-time analytics, record-keeping, aging buckets, and net collections. Plus, it also simplifies medical practice management.</p>
+                <button class="bg-green-800 text-white pt-2 pb-2 pr-6 pl-6 rounded-md self-start">Learn More</button>
+            </div>
+        </div>
+        <!-- Third Button Content -->
+        <div style="display:none;" class="paragraphs paras3 xl:w-8/12 w-full flex xl:flex-row flex-col-reverse items-center justify-center xl:gap-x-5 gap-y-3 xl:p-10 p-3 bg-green-100 rounded-xl mt-5">
+            <div class="xl:w-1/2 w-full"><img width="400px" src="https://bestmedicalbilling.com/wp-content/uploads/2024/01/Home-S10-P3.webp" alt=""></div>
+            <div class="xl:w-1/2 w-full flex flex-col gap-y-5">
+                <h2 class="font-semibold xl:text-3xl text-xl">Revolutionizing Revenue Cycle via Your <span class="text-green-600">Medical Billing Software</span></h2>
+                <p>What makes us the best medical billing company is that we can help healthcare providers to optimize their existing billing software as well. This allows for better visibility into patient finances, real-time analytics, record-keeping, aging buckets, and net collections. Plus, it also simplifies medical practice management.</p>
+                <button class="bg-green-800 text-white pt-2 pb-2 pr-6 pl-6 rounded-md self-start">Learn More</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Section 12 -->
+    <div class="flex flex-col bg-green-700 items-center justify-center mt-8 mb-8">
+        <div class="xl:w-7/12 w-full flex xl:flex-row flex-col justify-center xl:p-10 p-3">
+            <div class="xl:w-1/3 w-full flex flex-col justify-center items-center bg-white pt-5 pb-5 pl-4 pr-4 gap-y-3">
+                <img src="HP-S4-P4.svg" alt="">
+                <h2 class="w-full text-center text-2xl font-semibold">Schedule a Free Consultation</h2>
+                <p class="w-full text-center">Stop losing money.</p>
+                <p class="w-full text-center">Start maximizing your revenue.</p>
+                <form action="" class="flex w-full flex-col gap-y-5">
+                    <input type="text" placeholder="Name" class="pt-1 pb-2 pl-3 w-full rounded-md bg-slate-100 text-white">
+                    <input type="email" placeholder="Email" class="pt-1 pb-2 pl-3 w-full rounded-md bg-slate-100 text-white">
+                    <input type="tel" placeholder="Phone Number" class="pt-1 pb-2 pl-3 w-full rounded-md bg-slate-100 text-white">
+                    <button class="bg-green-800 text-white font-semibold rounded-md w-full hover:bg-blue-900 pt-1 pb-2">Continue</button>
+                </form>
+            </div>
+            <div class="xl:w-2/3 w-full bg-green-900 flex flex-col justify-center p-10 gap-y-6">
+                <div class="flex items-center gap-x-4"><img src="HP-S4-P4.svg"><p class="text-white">Faster payments with optimized workflows</p></div>
+                <div class="flex items-center gap-x-4"><img src="HP-S4-P4.svg"><p class="text-white">Accurate coding for cleaner claims</p></div>
+                <div class="flex items-center gap-x-4"><img src="HP-S4-P4.svg"><p class="text-white">Ongoing audits to ensure compliance</p></div>
+                <div class="flex items-center gap-x-4"><img src="HP-S4-P4.svg"><p class="text-white">Real-time claim tracking and analytics</p></div>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+<script>
+// First Section Counters
+$(document).ready(function() {
+    $('.counter').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+   }); 
+});  
+
+// Third Carousel Section
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    slidesPerView:1,
+    loop:true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints:{
+        1024:{
+            slidesPerView:4,
+            spaceBetween:10,
+        }
+    },
+    navigation:{
+        nextEl:".swiper-button-next",
+        prevEl:".swiper-button-prev",
+      },
+}); 
+
+// Fivth Section Carousel
+var swipers = new Swiper('.mySwiper2',{
+    spaceBetween: 0,
+    slidesPerView:1,
+    loop:true,
+    autoplay:{
+        delay:2500,
+        disableOnInteraction:false,
+        reverseDirection:true,
+    },
+    breakpoints:{
+        1024:{
+            slidesPerView:3,
+            spacebetween:10,
+        }
+    }
+});
+
+// Seventh Section
+$('.styling_button').click(function(){
+    $('.styling_button').css({
+        "background":"transparent",
+        "color":"black"
+    })
+    $(this).css({
+        "background":"white",
+        "color":"green"
+    })
+})
+
+$('.styling_button').click(function(){
+    $('.paragraph').hide();
+    const paraClass = $(this).data('content');
+    $('.'+paraClass).show();
+});
+
+// Tenth Section
+let swiper4 = new Swiper('.mySwiper3',{
+    slidesPerView:1,
+    spaceBetween:10,
+    breakpoints:{
+        1024:{
+            slidesPerView:1.5,
+            spaceBetween:10,
+        }
+    }
+});
+document.querySelector('.slide-1').addEventListener('click',function(e){
+    swiper4.slideTo(0,0);
+});
+document.querySelector('.slide-2').addEventListener('click',function(e){
+    swiper4.slideTo(1,0);
+});
+document.querySelector('.slide-3').addEventListener('click',function(e){
+    swiper4.slideTo(2,0);
+});
+$('.clicked-slide-button').click(function(){
+    $('.clicked-slide-button').css({
+        "color":"grey"
+    });
+    $(this).css({
+        "color":"white"
+    })
+});
+
+// Eleventh Section
+$('.clicked-btn').click(function(){
+    $('.clicked-btn').css({
+        "border":"1px solid white",
+        "color":"black"
+    });
+    $(this).css({
+        "border":"1px solid green",
+        "color":"green"
+    });
+});
+$('.clicked-btn').click(function(){
+    $('.paragraphs').hide();
+    const showHideDiv = $(this).data('contents');
+    $('.'+showHideDiv).show();
+});
+</script>
+</html>
